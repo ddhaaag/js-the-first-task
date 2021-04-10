@@ -11,7 +11,7 @@ function getPI() {
   
   const numbers = [10, 17, 5, 12, 15, 99, 1];
   /**
-   * Переделать
+   * @remark
    * Неверное использование метода apply @see {@link https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/apply}.
    * Вместо него нужно использовать bind @see {@link https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/bind}.
    * Оба метода apply и call используются для выполнения функции с определённым контекстом, когда bind используется для привязки контекста к функции.
