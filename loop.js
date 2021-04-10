@@ -4,7 +4,10 @@
 /* В строке "Я стану крутым программистом" сделать первую букву каждого слова в верхнем регистре" */
 
 // let become = "Я стану крутым программистом";
-
+/**
+ * @remark
+ * Решить нужно не методами массивов, а циклами.
+ */
 function makeFirstLetterUpperCase(str) {
     let newStr = str.split(' ').map(item => item[0].toUpperCase() + item.slice(1));
     return newStr.join(' ');
@@ -28,6 +31,10 @@ function makeFirstLetterUpperCase(str) {
   
 /* Создать строку "Просветление наступит через: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1" */
   
+/**
+ * @remark
+ * Решено не верно.
+ */
   function bright(num) {
     let output;
     for (let i = num; i > 0; i-- ) {
@@ -39,7 +46,10 @@ function makeFirstLetterUpperCase(str) {
   
   
 /* Найти и вывести в консоль все нечетные числа от 1 до 20 включительно. */
-  
+/**
+ * @remark
+ * Решить через увелечение итерируемого индекса i на 2.
+ */
   function getOdd(x, n) {
       for (let i = x; i <= n; i++) {
         if (i % 2 == 0) continue;
@@ -52,7 +62,10 @@ function makeFirstLetterUpperCase(str) {
 /* На основе строки "теперь я мастер циклов javascript" создать новую строку, где первые буквы каждого слова будут в верхнем регистре и будут отсутствовать пробелы. */
   
   let master = 'теперь я мастер циклов javascript';
-  
+ /**
+ * @remark
+ * Решить через цикл, не используя методы массивов.
+ */ 
   function getNewString(str) {
     let newStr = str.split(' ').map(item => item[0].toUpperCase() + item.slice(1));
     return newStr.join('');
