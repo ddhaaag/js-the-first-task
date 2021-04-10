@@ -10,7 +10,12 @@ function getPI() {
 /* Найти максимальное и минимальное значения из представленного ряда 10, 17, 5, 12, 15, 99, 1 */
   
   const numbers = [10, 17, 5, 12, 15, 99, 1];
-  
+  /**
+   * Переделать
+   * Неверное использование метода apply @see {@link https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/apply}.
+   * Вместо него нужно использовать bind @see {@link https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/bind}.
+   * Оба метода apply и call используются для выполнения функции с определённым контекстом, когда bind используется для привязки контекста к функции.
+   */
   const getMinMaxValue = (num) => {
     let min = Math.min.apply(null, num);
     let max = Math.max.apply(null, num);
