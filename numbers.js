@@ -12,8 +12,8 @@ function getPI() {
   const numbers = [10, 17, 5, 12, 15, 99, 1];
   
   const getMinMaxValue = (num) => {
-    let min = Math.min.apply(null, num);
-    let max = Math.max.apply(null, num);
+    let min = Math.min( ...num );
+    let max = Math.max( ...num );
     return console.log(`Минимально значение = ${min}, максимальное значение = ${max}`);
   }
   // console.log(getMinMaxValue(numbers));

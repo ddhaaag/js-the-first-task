@@ -68,10 +68,10 @@ function getNewArray(arr, start, finish) {
 // Удвоить элементы массива, не используя циклы.,
 
 function doubleArray(arr) {
-  let doubleArr = [ ...arr, ...arr];
+  let doubleArr = arr.map( num => num * 2);
   return doubleArr;
 }
-// console.log(doubleArray([1, 2, 3]))
+// console.log(doubleArray([1, 2, 3]));
 
 
 // Удалить из массива [1, 2, 3, 4, 5] второй и третий элементы.
@@ -155,9 +155,10 @@ function objSort(arr) {
 //  Например, filterServices(services, 20, 60).
 
  function filterServices(arr, x, y) {
-  return arr.map(a => {
-    console.log(a.executionTime);
-  })
+    let sortArr = arr.filter((a, b) => {
+      return (a.executionTime >= x && b.executionTime <= y) ? -1 : 1;
+    })
+    return sortArr;
  }
-//  console.log(filterServices(services, 20, 60));
- console.log(filterServices(services));
+ console.log(filterServices(services, 20, 60));
+//  console.log(filterServices(services));
