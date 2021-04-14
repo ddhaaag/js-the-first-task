@@ -72,19 +72,19 @@ function everySymbolStr(str) {
 
 // let array = ["JS", "is", "beautiful"];
 
-// function firstFunc(array, callback) {
-//   console.log("Value class:", array);
-//   callback(array);
-// }
+function firstFunc(array, callback) {
+  console.log("Value class:", array);
+  callback(array);
+}
 
-// firstFunc(array, function secondFunc(arr) {
-//   let str = "";
-//   for (let i = 0; i < arr.length; i++) {
-//     let t = arr[i][0].toUpperCase() + arr[i].substr(1);
-//     str += t;
-//   }
+firstFunc(array, function secondFunc(arr) {
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    let t = arr[i][0].toUpperCase() + arr[i].substr(1);
+    str += t;
+  }
 //   console.log("New value:", str);
-// })
+})
 
 
 

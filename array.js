@@ -154,11 +154,18 @@ function objSort(arr) {
 
 //  Например, filterServices(services, 20, 60).
 
- function filterServices(arr, x, y) {
-    let sortArr = arr.filter((a, b) => {
-      return (a.executionTime >= x && b.executionTime <= y) ? -1 : 1;
+ function filterServices(arr, start, end) {
+    let sortArr = arr.filter((item) => {
+      return item['executionTime'] > start && item['executionTime'] < end;
     })
-    return sortArr;
+    // return sortArr;
+
+    return sortArr.sort((a, b) => {
+      return a.executionTime - b.executionTime;
+    })
  }
- console.log(filterServices(services, 20, 60));
-//  console.log(filterServices(services));
+//  console.log(filterServices(services, 20, 60));
+//  console.log(filterServices(services, 10, 90));
+//  console.log(filterServices(services, 1, 5));
+//  console.log(filterServices(services, 90, 100));
+//  console.log(filterServices(services, 50, 60));
