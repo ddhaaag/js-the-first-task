@@ -66,7 +66,6 @@ function getNewArray(arr, start, finish) {
 
 
 // Удвоить элементы массива, не используя циклы.,
-
 function doubleArray(arr) {
   let doubleArr = arr.map( num => num * 2);
   return doubleArr;
