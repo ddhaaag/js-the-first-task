@@ -6,7 +6,7 @@
 // let become = "Я стану крутым программистом";
 /**
  * @remark
- * Решить нужно не методами массивов, а циклами.
+ * Решить нужно не методами массивов, а циклами for, while...
  */
 function makeFirstLetterUpperCase(str) {
     let newStr = str.split(' ').map(item => item[0].toUpperCase() + item.slice(1));

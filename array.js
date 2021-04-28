@@ -71,10 +71,10 @@ function getNewArray(arr, start, finish) {
    * Удвоить - значит каждый элемент массива умножить на 2.
    */
 function doubleArray(arr) {
-  let doubleArr = [ ...arr, ...arr];
+  let doubleArr = arr.map( num => num * 2);
   return doubleArr;
 }
-// console.log(doubleArray([1, 2, 3]))
+// console.log(doubleArray([1, 2, 3]));
 
 
 // Удалить из массива [1, 2, 3, 4, 5] второй и третий элементы.
@@ -157,6 +157,7 @@ function objSort(arr) {
 
 //  Например, filterServices(services, 20, 60).
 
+<<<<<<< HEAD
   /**
    * @remark
    * Задача не решена.
@@ -165,6 +166,20 @@ function objSort(arr) {
   return arr.map(a => {
     console.log(a.executionTime);
   })
+=======
+ function filterServices(arr, start, end) {
+    let sortArr = arr.filter((item) => {
+      return item['executionTime'] > start && item['executionTime'] < end;
+    })
+    // return sortArr;
+
+    return sortArr.sort((a, b) => {
+      return a.executionTime - b.executionTime;
+    })
+>>>>>>> f7893cbbdb64cd74f1e7cc9e0c5379a4b83ebb1a
  }
 //  console.log(filterServices(services, 20, 60));
- console.log(filterServices(services));
+//  console.log(filterServices(services, 10, 90));
+//  console.log(filterServices(services, 1, 5));
+//  console.log(filterServices(services, 90, 100));
+//  console.log(filterServices(services, 50, 60));
