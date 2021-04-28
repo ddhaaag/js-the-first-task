@@ -66,10 +66,6 @@ function getNewArray(arr, start, finish) {
 
 
 // Удвоить элементы массива, не используя циклы.,
-  /**
-   * @remark
-   * Удвоить - значит каждый элемент массива умножить на 2.
-   */
 function doubleArray(arr) {
   let doubleArr = arr.map( num => num * 2);
   return doubleArr;
@@ -157,16 +153,6 @@ function objSort(arr) {
 
 //  Например, filterServices(services, 20, 60).
 
-<<<<<<< HEAD
-  /**
-   * @remark
-   * Задача не решена.
-   */
- function filterServices(arr, x, y) {
-  return arr.map(a => {
-    console.log(a.executionTime);
-  })
-=======
  function filterServices(arr, start, end) {
     let sortArr = arr.filter((item) => {
       return item['executionTime'] > start && item['executionTime'] < end;
@@ -176,7 +162,6 @@ function objSort(arr) {
     return sortArr.sort((a, b) => {
       return a.executionTime - b.executionTime;
     })
->>>>>>> f7893cbbdb64cd74f1e7cc9e0c5379a4b83ebb1a
  }
 //  console.log(filterServices(services, 20, 60));
 //  console.log(filterServices(services, 10, 90));

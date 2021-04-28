@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-  /**
-   * @remark
-   * Где задачи?
-   */
-=======
 document.addEventListener('DOMContentLoaded', function () {
     console.clear();
     // ваш код поместить тут
@@ -47,7 +41,3 @@ document.addEventListener('DOMContentLoaded', function () {
   ul.className = 'list';
 
 });
-
-
-  
->>>>>>> f7893cbbdb64cd74f1e7cc9e0c5379a4b83ebb1a
